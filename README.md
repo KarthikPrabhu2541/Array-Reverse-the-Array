@@ -1,7 +1,7 @@
 # LEETCODE / ARRAYS / REVERSE THE ARRAY
 A simple java program to reverse the provided array.
 
-## intution
+## Intution
 There are three approaches to this simple problem.
 1. Brute force
 2. Two pointer 
@@ -23,12 +23,15 @@ For each iteration when the element in placed in its intended place then the arr
 
 ## 2. Two pointer Method
 
-The approach here would be the have two pointers that point to complementary / opposite indices of the same given array. This method uses a for loop as well. The for loop starts with an index 0 and its complementary index (n-1).
+The approach here would be the have two pointers that point to complementary / opposite indices of the same given array. This method can be done using a for loop or a while loop but use while preferably. The two pointers are initialised to 0 and n-1 namly i and j.
 
 The complementary index for the current index i is same as last method which is,
 (n-1)-i
 
-Every iteration , the current index and the complementary index elements are swaped with or without the use of another variable. This would go on till the current index points to the middle element (n is odd) or when the current index points to the second middle element (n is even) . In either of these cases, the loop is terminated and the program execution is stopped. 
+Every iteration , the current index and the complementary index elements are swaped with or without the use of another variable. The terminating state is different for the two cases
+case 1 - even number of array elements - two middle points - pointer i is greated than j
+case 2 - odd number of array elements - single middle point - pointer i and j are equal 
+In either of these cases, the loop is terminated and the program execution is stopped. 
 
 This method differs from the previous approach in the point that it does not need any input relative additional space to solve the problem and it needs to have half as many iterations.
 
@@ -44,5 +47,5 @@ We can use the reverse method and pass the arraylist as a parameter to this meth
 ### Time complexity : O(n)
 ### Space complexity : O(1)
 
-
+## But the problem is that leetcode asks the user to make changes in the existing string so only method 2 and 3 would work in that case.
 
