@@ -1,11 +1,18 @@
 #a java program to reverse the array
-class Reversearray
+class Reverse1
 {
-    public static String reverseWord(String str)
+    public static String reversestring(String s)
     {
-        String stri="";
-        for(int i=str.length()-1;i>=0;i--)
-            stri+=str.charAt(i);
-        return stri;
+        String s1="";
+        for(int i=s.length()-1;i>=0;i--)
+            s1+=s.charAt(i);
+        return s1;
     }
+    public static void main(Sring args[])
+    {
+        String str = "sihT esreveR"
+        String reversedString = reversestring(str);
+        System.out.println("The reversed String is " + reversedString);
+    }
+    
 }
